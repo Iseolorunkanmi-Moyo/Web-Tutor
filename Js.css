@@ -1,0 +1,68 @@
+body{
+    background-color:mediumaquamarine;
+    text-align: center;
+     
+}
+
+.navbar{
+    position:fixed; 
+    margin-bottom:10px ; 
+    background-color:white;
+    width: 98%;
+    height: 5%;
+}
+
+.middle{
+    text-align: center;
+}
+
+.welcome{
+    text-align: center;
+    font-family: sacramento ;
+    font-size: xx-large;
+    padding: 10%;
+}
+
+
+
+.username{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 2%;
+}
+
+.password{
+    padding-bottom: 20px;
+}
+
+#userInput{
+    height: 1%;
+    width: 25%;
+    padding: 5px;
+    border:  solid mediumaquamarine;
+    border-radius: 10px;
+}
+
+#passwordInput{
+    height: 1%;
+    width: 25%;
+    padding: 5px;
+    border:  solid mediumaquamarine;
+    border-radius: 10px;
+}
+
+
+#submit{
+    margin-bottom:10px;
+}
+
+#see{
+    position: relative;
+    left:16% ;
+    bottom: 50px;
+    background-image: url(eye.webp);
+    height: 30px;
+    width: 30px;
+    background-size:100% ;
+    border-radius: 80%;
+}

@@ -1,0 +1,42 @@
+body{
+    background-color:#80B3FF;
+    text-align: center;
+}
+
+.navbar{
+    position:sticky; 
+    top: 0;
+    background-color:white ;
+    height: 70px;
+}
+
+
+
+.profile1{
+    float: left;
+    text-align: left;
+    height: 70px;
+    margin-left: 1%;
+    position: relative;
+}
+
+
+#profilename{
+    float: left;
+    padding: 23px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.link{
+    text-align: right;
+    color: black; 
+    padding-top: 2%; 
+}
+
+.links{
+    text-decoration: none;
+    border-color:#80B3FF ;
+    color: black;
+    padding: 20px;
+    border-left: solid #80B3FF;
+}

@@ -1,36 +1,28 @@
 //stored data variable
-var username = [];
+var username = ["moyo"];
 
-var password = [];
+var password = ["joseph"];
 
-var empty = {};
+let empty = undefined;
 
-var userCorr = (userInput.value === empty);
+var userCheck = (username.includes( userInput.value))
 
-var usernameInput = username.includes(userInput.value);
+var usecheck = (userCheck === false)
 
-var passwordCorrection = (passwordInput.value === empty);
+
+
+
 
 //User name input
 document.getElementById("submit").addEventListener("click", subuser);
 
 function subuser(){
 
-if  (userCorr === true) {
-    document.getElementById(userInput.placeholder).innerText = "Fill in your username"
+if  (usecheck = false){
+    alert("Fill in username");
 }
-
-
-else if(username.includes(userInput.value)){
-    alert("This username is taken");
-}
-
-if  (passwordCorrection === true) {
-    alert  ("Fill in password");
-}
-
-else if (userCorr === false, usernameInput === false, passwordCorrection ===false )  {   
-    
+ 
+else if (userCheck = true){
     
     username.push(
 
@@ -42,7 +34,20 @@ else if (userCorr === false, usernameInput === false, passwordCorrection ===fals
 
     document.getElementById("well").innerHTML = ("Welcome " + userInput.value);
 
+    var names = userInput.value
+
+    var firstChar = (names).slice(0,1);
     
+    var upperCaseFirstChar = firstChar.toUpperCase();
+    
+    var restofname = (userInput.value).slice(1,names.length);
+    
+    var fullName = upperCaseFirstChar + restofname;
+
+    document.getElementById("profilename").innerHTML = (fullName);
+
+    window.open("hi.html",);
+
 }
 }
 
@@ -50,11 +55,14 @@ else if (userCorr === false, usernameInput === false, passwordCorrection ===fals
 document.getElementById("but").addEventListener("click", leet );
 
 function leet ()  {
-    alert ("My Name is " + userInput.value);
-    alert ("My password is " + passwordInput.value);
+    alert ("Your username is " + userInput.value);
+    alert ("Your password is " + passwordInput.value);
+    alert(fullName);
 }
 
 
+
+// pivacy eye for password
 var count = 1;
 
 document.getElementById("see").addEventListener("click", text);
@@ -66,13 +74,16 @@ function text () {
     if (count % 2 === 0){
 
         passwordInput.type = "text"
+        document.getElementById("see").style.backgroundImage="url(crossed-eye.png)";
 
     }
 
     else if (count % 2 === 1){
 
         passwordInput.type = "password"
-
+        document.getElementById("see").style.backgroundImage="url(eye.webp)";
     }
-
 }
+
+
+

@@ -1,16 +1,47 @@
 body{
-    background-color:mediumaquamarine;
+    background-color:#80B3FF;
     text-align: center;
-     
 }
 
 .navbar{
-    position:fixed; 
-    margin-bottom:10px ; 
-    background-color:white;
-    width: 98%;
-    height: 5%;
+    position:sticky; 
+    top: 0;
+    background-color:white ;
+    height: 70px;
 }
+
+
+
+.profile1{
+    float: left;
+    text-align: left;
+    height: 70px;
+    margin-left: 1%;
+    position: relative;
+}
+
+
+#profilename{
+    float: left;
+    padding: 23px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.link{
+    text-align: right;
+    color: black; 
+    padding-top: 2%; 
+}
+
+.links{
+    text-decoration: none;
+    border-color:#80B3FF ;
+    color: black;
+    padding: 20px;
+    border-left: solid #80B3FF;
+}
+
+
 
 .middle{
     text-align: center;
@@ -20,7 +51,7 @@ body{
     text-align: center;
     font-family: sacramento ;
     font-size: xx-large;
-    padding: 10%;
+    padding: 6%;
 }
 
 
@@ -39,7 +70,7 @@ body{
     height: 1%;
     width: 25%;
     padding: 5px;
-    border:  solid mediumaquamarine;
+    border:  solid #80B3FF;
     border-radius: 10px;
 }
 
@@ -47,13 +78,25 @@ body{
     height: 1%;
     width: 25%;
     padding: 5px;
-    border:  solid mediumaquamarine;
+    border:  solid #80B3FF;
     border-radius: 10px;
 }
 
 
 #submit{
     margin-bottom:10px;
+    width: 90px;
+    height: 30px;
+    background-color: burlywood;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    border:#80B3FF;  
+    
+}
+
+#submit:hover{
+    background-color:white;
+    transition: 1s;
 }
 
 #see{
@@ -65,4 +108,6 @@ body{
     width: 30px;
     background-size:100% ;
     border-radius: 80%;
+    border: #80B3FF;
 }
+

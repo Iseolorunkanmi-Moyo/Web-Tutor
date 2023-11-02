@@ -10,16 +10,13 @@ body{
     height: 70px;
 }
 
-
-
-.profile1{
+#profile1{
     float: left;
     text-align: left;
     height: 70px;
     margin-left: 1%;
     position: relative;
 }
-
 
 #profilename{
     float: left;
@@ -39,4 +36,12 @@ body{
     color: black;
     padding: 20px;
     border-left: solid #80B3FF;
+}
+
+
+#footer{
+    position:fixed; 
+    bottom: 0;
+    background-color: white;
+    width: 100%;
 }

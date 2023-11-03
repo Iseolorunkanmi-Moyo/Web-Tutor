@@ -1,7 +1,7 @@
 body{
-    background-color:#80B3FF;
+    background-image: url(atom1.png);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    background-size: 100%;
 }
 
 .navbar{
@@ -43,9 +43,9 @@ body{
 }
 
 .name{
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-bottom: 5px;
+    margin: 10px  30px ;
+  
+    color: white;
 }
 
 #change{

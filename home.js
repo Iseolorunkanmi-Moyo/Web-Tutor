@@ -7,23 +7,14 @@ let empty = undefined;
 
 var userCheck = (username.includes( userInput.value))
 
-var gen = (userInput.value).toLowerCase;
+var used = (userInput.value).toLowerCase;
 //User name input
 
-var names = userInput.value
-
-    var firstChar = (names).slice(0,1);
-    
-    var upperCaseFirstChar = firstChar.toUpperCase();
-    
-    var restofname = (userInput.value).slice(1,names.length);
-    
-    var fullName = upperCaseFirstChar + restofname;
 
 
 document.getElementById("submit").addEventListener("click", subuser);
 
-var jay = username.includes(gen);
+var jay = username.includes(used);
 
 function subuser(){ 
 
@@ -55,11 +46,10 @@ else {
 
     document.getElementById("passwordInput").value);
 
-    open("hi.html","_top");
+    window.open("hi.html","_top");
 }
 
 }
-
 
 // pivacy eye for password
 
@@ -87,5 +77,3 @@ function text () {
 
     }
 }
-
-document.getElementById("footer").innerHTML= Date();

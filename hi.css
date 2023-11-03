@@ -1,5 +1,7 @@
 body{
-    background-color:#80B3FF;
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -35,13 +37,5 @@ body{
     border-color:#80B3FF ;
     color: black;
     padding: 20px;
-    border-left: solid #80B3FF;
-}
-
-
-#footer{
-    position:fixed; 
-    bottom: 0;
-    background-color: white;
-    width: 100%;
+    border-left: solid black;
 }

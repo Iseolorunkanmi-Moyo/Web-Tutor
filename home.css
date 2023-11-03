@@ -1,138 +1,364 @@
-body{
-    font-family: 'poppins','sans-serif';
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins','sans-serif';
-    background-image: url(atom1.png);
-    background-size: 100%;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (max-height:600px) {
+    body{
+        font-family: 'poppins','sans-serif';
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins','sans-serif';
+        text-align: center;
+        background-size: 100%;
+        background: rgb(53, 68, 68); 
+    }
+
+    h2{
+        font-size: 2em;
+        color: #fff;
+        text-align: center;
+        margin-bottom:80px ;
+    }
+
+    .col-1{
+        position: relative;
+        width:100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        float:left;
+    }
+
+    #see{
+        position: absolute;
+        left: 165px;
+        bottom: 5px;
+        
+        background-image: url(eye.webp);
+        height: 26px;
+        width: 26px;
+        background-size:100% ;
+        border-radius: 40px;
+        border: none;
+    }
+
+    .userbox{
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .passbox{
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .userbox input{
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border:none;
+        outline: none;
+        font-size: 1em;
+        color: #fff;
+        font-family: '';
+    }
+    
+    .passbox input{
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border:none;
+        outline: none;
+        font-size: 1em;
+        color: #fff;
+    }
+    
+    #submit {
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        background: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 10px;
+        font-family: dancing_script ;
+    }
+    
+    #submit:hover{
+        background-color: #7b8ab6;
+        transition: 5ms;
+    }
+    
+    .register{
+        font-size: .9em;
+        color: #fff;
+        text-align: center;
+        font-family:Signika_Negative ;
+        margin: 25px 0 10px;
+    }
+    
+    .for{
+        margin: 8px 0;
+    }
+
+    #passrest{
+        text-decoration: none;
+        color: black;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .label{
+        text-align:left ;
+        margin-top: 15px;
+    }
+    
+
 }
 
-*{
-    box-sizing: border-box;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
 }
 
-.q{
-    height: 100px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        font-family: 'poppins','sans-serif';
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins','sans-serif';
+        background-image: url(atom1.png);
+        background-size: 100%;
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+    
+    .q{
+        height: 100px;
+        
+    }
+    
+    #see{
+        position: absolute;
+        top:270px ;
+        left: 325px;
+        background-image: url(eye.webp);
+        height: 26px;
+        width: 26px;
+        background-size:100% ;
+        border-radius: 40px;
+        border: none;
+    }
+    
+    .col-1{
+        position: relative;
+        width:400px;
+        height:450px;
+        background: rgb(53, 68, 68);  
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        float:left;
+        padding: 15px;
+        border: 1px solid red;
+    }
+    
+    h2{
+        font-size: 2em;
+        color: #fff;
+        text-align: center;
+        margin-bottom:80px ;
+    }
+    
+    .userbox{
+        position: relative;
+        width: 310px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .passbox{
+        position: relative;
+        width: 310px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .userbox input{
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border:none;
+        outline: none;
+        font-size: 1em;
+        color: #fff;
+        font-family: '';
+    }
+    
+    .passbox input{
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border:none;
+        outline: none;
+        font-size: 1em;
+        color: #fff;
+    }
+    
+    #submit {
+        width: 100%;
+        height: 40px;
+        border-radius: 40px;
+        background: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 10px;
+        font-family: dancing_script ;
+    }
+    
+    #submit:hover{
+        background-color: #7b8ab6;
+        transition: 5ms;
+    }
+    
+    .register{
+        font-size: .9em;
+        color: #fff;
+        text-align: center;
+        margin: 25px 0 10px;
+    }
+    
+    #passrest{
+        text-decoration: none;
+        color: black;
+        padding: 1px;
+    }
+    
+    .label{
+        text-align:left ;
+        margin-top: 15px;
+    }
+    
     
 }
 
-#see{
-    position: absolute;
-    top:270px ;
-    left: 325px;
-    background-image: url(eye.webp);
-    height: 26px;
-    width: 26px;
-    background-size:100% ;
-    border-radius: 40px;
-    border: none;
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
-.col-1{
-    position: relative;
-    width:400px;
-    height:450px;
-    background: rgb(53, 68, 68);  
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    float:left;
-    padding: 15px;
-    border: 1px solid red;
-}
-
-h2{
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
-    margin-bottom:80px ;
-}
-
-.userbox{
-    position: relative;
-    width: 310px;
-    border-bottom: 1px solid #fff;
-}
-
-.passbox{
-    position: relative;
-    width: 310px;
-    border-bottom: 1px solid #fff;
-}
-
-.userbox input{
-    width: 100%;
-    height: 40px;
-    background: transparent;
-    border:none;
-    outline: none;
-    font-size: 1em;
-    color: #fff;
-    font-family: '';
-}
-
-.passbox input{
-    width: 100%;
-    height: 40px;
-    background: transparent;
-    border:none;
-    outline: none;
-    font-size: 1em;
-    color: #fff;
-}
-
-#submit {
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    background: #fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-    margin-top: 10px;
-    font-family: dancing_script ;
-}
-
-#submit:hover{
-    background-color: #7b8ab6;
-    transition: 5ms;
-}
-
-.register{
-    font-size: .9em;
-    color: #fff;
-    text-align: center;
-    margin: 25px 0 10px;
-}
-
-#passrest{
-    text-decoration: none;
-    color: black;
-    padding: 1px;
-}
-
-.label{
-    text-align:left ;
-    margin-top: 15px;
-}
-
-@media  screen  and (min-width: 768px) {
-    .col-1
-    {
-    width: 100%;
-    }
-
-    .section
-    {
-        background-size: 100%;
-        height: auto;
-        width: 100%;
-    }
-
-    body
-    {
-        background-image: none;
-    }
 }

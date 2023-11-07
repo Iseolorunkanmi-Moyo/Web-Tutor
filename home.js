@@ -8,25 +8,22 @@ let empty = undefined;
 var userCheck = (username.includes( userInput.value))
 
 var used = (userInput.value).toLowerCase;
+
+var ink = (passwordInput.value).toLowerCase
+
 //User name input
-
-
 
 document.getElementById("submit").addEventListener("click", subuser);
 
+function subuser(){ 
+
 var jay = username.includes(used);
 
-function subuser(){ 
+var john = password.includes(ink);    
 
 if  (userInput.value === ''){
 
     alert("Fill in username");
-
-}
-
-else if (jay = false){
-
-    alert("This username not found");
 
 }
 
@@ -36,15 +33,27 @@ else if (passwordInput.value === ''){
 
 }
 
-else {
+else if (jay = false){
+
+    alert("This username not found");
+
+}
+
+else if( john = false){
+    alert("Password incorrect")
+}
+
+else if (jay = true, john = true) {
     
     username.push(
 
-    document.getElementById("userInput").value);
+    document.getElementById("userInput.value"));
 
     password.push(
 
-    document.getElementById("passwordInput").value);
+    document.getElementById("passwordInput.value"));
+
+    document.getElementById("submit").style.backgroundColor = ("gray") ;
 
     window.open("hi.html","_top");
 }
@@ -52,7 +61,6 @@ else {
 }
 
 // pivacy eye for password
-
 var count = 1;
 
 document.getElementById("see").addEventListener("click", text);

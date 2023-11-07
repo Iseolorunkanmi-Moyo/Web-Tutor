@@ -1,7 +1,83 @@
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    body{
+        background-color: rgb(180, 180, 219);    
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+    
+    .navbar{
+        position:fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color:white ;
+        height: 70px;
+    }
+    
+    .return{
+        float: left;
+        text-align: left;
+        height: 25px;
+        margin-left: 1%;
+        position: relative;
+        padding: 20px;
+    }
+    
+    
+    .link{
+        text-align: right;
+        color: black; 
+        padding-top: 2%; 
+    
+    }
+    
+    .links{
+        text-decoration: none;
+        border-color:#80B3FF ;
+        color: black;
+        padding: 28px;
+        border-left: solid #80B3FF;
+    }
+    
+    #acctName{
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .name{
+        margin-top: 90px;
+        color:black;
+        padding-left: 30px;
+        margin-bottom: 10px;
+    }
+    
+    #change{
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+    
+            
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    
 body{
-    background-image: url(atom1.png);
+    background-color: rgb(180, 180, 219);    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-size: 100%;
+    
 }
 
 .navbar{
@@ -25,6 +101,7 @@ body{
     text-align: right;
     color: black; 
     padding-top: 2%; 
+
 }
 
 .links{
@@ -51,4 +128,10 @@ body{
 #change{
     margin-left: 30px;
     margin-bottom: 5px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

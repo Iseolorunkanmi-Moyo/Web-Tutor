@@ -1,4 +1,6 @@
-document.getElementsById("dd-btn").addEventListener("click", show);
+var count = 1;
+
+document.getElementById("dd-btn").addEventListener("click", show);
 
 function show() {
     
@@ -6,13 +8,13 @@ function show() {
 
     if (count % 2 === 0){
 
-        document.getElementsByClassName("dd-content").style.display = "block";
+            document.getElementById("dd-content").style.display = "block";
 
     }
 
     else if (count % 2 === 1){
 
-        document.getElementsByClassName("dd-content").style.display = "none";
+        document.getElementById("dd-content").style.display = "none";
 
     }
     

@@ -33,13 +33,13 @@ else if (passwordInput.value === ''){
 
 }
 
-else if (jay = false){
+else if (userInput.value != username){
 
     alert("This username not found");
 
 }
 
-else if( john = false){
+else if( passwordInput.value != password){
     alert("Password incorrect")
 }
 
@@ -84,4 +84,5 @@ function text () {
         document.getElementById("see").style.backgroundImage="url(eye.webp)";
 
     }
+
 }

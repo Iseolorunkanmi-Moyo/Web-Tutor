@@ -8,7 +8,7 @@ function show() {
 
     if (count % 2 === 0){
 
-            document.getElementById("dd-content").style.display = "block";
+        document.getElementById("dd-content").style.display = "block";
 
     }
 
@@ -19,3 +19,4 @@ function show() {
     }
     
 }
+

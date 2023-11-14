@@ -7,7 +7,6 @@
         text-align: center;
     }
 
-    /* navbar */
 
     .navbar{
         background-color: #04AA6D;
@@ -95,14 +94,7 @@
     .dd:hover #dd-content {display:block;}                           
       
     .dd:hover #dd-btn {background-color: #3e8e41;}
-
-    /* first */
-
-    .name{
-        
-    }
-
-
+      
 }
 
 
@@ -473,7 +465,7 @@
         float: left;
         height: 50px;
         border-radius: 100px;
-        
+        margin: 20px;
     }
 
     .header{
@@ -485,7 +477,7 @@
         float: left;
         height: 40px;
         width: 40px; 
-            
+        margin: 20px;       
       }
       
       #dd-btn{

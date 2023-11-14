@@ -1,15 +1,14 @@
 //stored data variable
-var username = ["moyo"];
+
+var username = ["moyo", "jay" ];
 
 var password = ["joseph"];
-
-let empty = undefined;
 
 var userCheck = (username.includes( userInput.value))
 
 var used = (userInput.value).toLowerCase;
 
-var ink = (passwordInput.value).toLowerCase
+var ink = (passwordInput.value).toLowerCase;
 
 //User name input
 
@@ -19,8 +18,9 @@ function subuser(){
 
 var jay = username.includes(used);
 
-var john = password.includes(ink);    
+var john = password.includes(ink); 
 
+ 
 if  (userInput.value === ''){
 
     alert("Fill in username");
@@ -33,15 +33,17 @@ else if (passwordInput.value === ''){
 
 }
 
-else if (userInput.value != username){
+else if (( username.includes(userInput.value))=== false){
 
     alert("This username not found");
 
 }
 
-else if( passwordInput.value != password){
+else if((password.includes(passwordInput.value))=== false){
     alert("Password incorrect")
-}
+} 
+
+
 
 else if (jay = true, john = true) {
     
@@ -54,8 +56,13 @@ else if (jay = true, john = true) {
     document.getElementById("passwordInput.value"));
 
     document.getElementById("submit").style.backgroundColor = ("gray") ;
+  
+    const al = setTimeout(
+        mm, 1000)
 
-    window.open("hi.html","_top");
+        function mm (){
+            (window.open("hi.html", "_top"))
+        }
 }
 
 }
@@ -86,3 +93,7 @@ function text () {
     }
 
 }
+
+var hh = 1;
+
+export  {hh};

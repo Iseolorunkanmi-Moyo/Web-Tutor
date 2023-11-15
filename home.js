@@ -54,8 +54,6 @@ else if (jay = true, john = true) {
     password.push(
 
     document.getElementById("passwordInput.value"));
-
-    document.getElementById("submit").style.backgroundColor = ("gray") ;
   
     const al = setTimeout(
         mm, 1000)
@@ -80,7 +78,7 @@ function text () {
 
         passwordInput.type = "text";
 
-        document.getElementById("see").style.backgroundImage="url(crossed-eye.png)";
+        document.getElementById("see").style.backgroundImage="url(closed-eye.png)";
 
     }
 
@@ -88,12 +86,24 @@ function text () {
 
         passwordInput.type = "password"
 
-        document.getElementById("see").style.backgroundImage="url(eye.webp)";
+        document.getElementById("see").style.backgroundImage="url(eye.png)";
 
     }
 
 }
 
-var hh = 1;
+var nameUser = userInput.value
 
-export  {hh};
+var FC = nameUser.slice(0,1);
+
+var UFC = FC.toUpperCase();
+
+var Ron = nameUser.slice(1,nameUser.length);
+
+var capName = UFC + Ron;
+
+var has = capName;
+
+window.onload = function() {
+    localStorage.setItem("name", has )
+}

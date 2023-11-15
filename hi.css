@@ -1,19 +1,14 @@
 /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 800px) {
     body{
-        background-color:white;    
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
+        background-color:white;            
     }
-
 
     .navbar{
         background-color: #04AA6D;
         position: fixed;
         top: 0;
-        left: 0;    
-        padding: 1px;
+        left: 0;   
         width: 100%;
         box-shadow:  0 0 10px 0 rgba(0,0,0,0.4);
     }
@@ -22,22 +17,20 @@
         float: left;
         height: 50px;
         border-radius: 100px;
-        margin: 10px;
     }
     
     #profilename{
         float: left;
-        padding: 23px 0px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .header{
-        float: right;
+        float: left;
         width: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: auto;
+        margin: 10px;
     }
 
     .logo{
@@ -48,18 +41,16 @@
         font-weight: 600;
     }
 
-    
     .dd{
         background-color: #04AA6D;
         color: white;
-        margin: 15px;
         font-size: 16px;
         border: none;
         position: absolute;
-        left:0 ;
-        display: block;
-        height: 50px;
-        width: 50px;
+        right:0 ;
+        height: 40px;
+        width: 40px;
+        margin: 13px 10px;
     }
       
     #dd-btn{
@@ -73,7 +64,7 @@
     #dd-content {
         display: none;
         position: absolute;
-        left: 5px;
+        right: 0px;
         background-color: #f1f1f1;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
@@ -82,15 +73,16 @@
       
     #dd-content a {
         color: black;
-        padding: 12px 16px;
         text-decoration: none;
         display: block;
-        
         padding: 20px;
+        text-align: center;
     }
 
     #dd-content a:hover {background-color: white;}
-      
+    
+    #dd-content a:active{background-color: lightcyan;}
+    
     .dd:hover #dd-content {display:block;}                           
       
     .dd:hover #dd-btn {background-color: #3e8e41;}
@@ -102,63 +94,14 @@
 
 
 
+@media only screen and (min-width: 801px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-
-    body{
-        background-color:white;    
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-    }
-
+   
     .navbar{
         background-color: #04AA6D;
         position: fixed;
         top: 0;
-        left: 0;    
-        padding: 1px;
+        left: 0;   
         width: 100%;
         box-shadow:  0 0 10px 0 rgba(0,0,0,0.4);
     }
@@ -167,22 +110,20 @@
         float: left;
         height: 50px;
         border-radius: 100px;
-        margin: 10px;
     }
     
     #profilename{
         float: left;
-        padding: 23px 0px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .header{
-        float: right;
+        float: left;
         width: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: auto;
+        margin: 10px;
     }
 
     .logo{
@@ -193,356 +134,26 @@
         font-weight: 600;
     }
 
-    
-    .dd{
-        background-color: #04AA6D;
-        color: white;
-        margin: 15px;
-        font-size: 16px;
-        border: none;
-        position: absolute;
-        left:0 ;
-        display: block;
-        height: 50px;
-        width: 50px;
-    }
-      
     #dd-btn{
-        background-image: url(menu.png);
-        height: 40px;
-        width: 40px;
-        background-size: 100%;
-        border: none;
-    }
-      
-    #dd-content {
         display: none;
+    }
+
+    #dd-content{
         position: absolute;
-        left: 5px;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
-        
+        right: 0;
+        padding: 23px;
     }
-      
-    #dd-content a {
-        color: black;
-        padding: 12px 16px;
+
+    .links{
         text-decoration: none;
-        display: block;
-        height: 40px;
-    }
-
-    #dd-content a:hover {background-color: white;}
-      
-    .dd:hover #dd-content {display:block;}                           
-      
-    .dd:hover #dd-btn {background-color: #3e8e41;}
-      
-}
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
-    body{
-        background-color:white;    
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-    }
-
-    .navbar{
-        background-color: #04AA6D;
-        position: fixed;
-        top: 0;
-        left: 0;    
-        padding: 1px;
-        width: 100%;
-        box-shadow:  0 0 10px 0 rgba(0,0,0,0.4);
-    }
-
-    .profile1{
-        float: left;
-        height: 50px;
-        border-radius: 100px;
-        margin: 10px;
-    }
-    
-    #profilename{
-        float: left;
-        padding: 23px 0px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .header{
-        float: right;
-        width: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: auto;
-    }
-
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    
-    .dd{
-        background-color: #04AA6D;
         color: white;
-        margin: 15px;
-        font-size: 16px;
-        border: none;
-        position: absolute;
-        left:0 ;
-        display: block;
-        height: 50px;
-        width: 50px;
-    }
-      
-    #dd-btn{
-        background-image: url(menu.png);
-        height: 40px;
-        width: 40px;
-        background-size: 100%;
-        border: none;
-    }
-      
-    #dd-content {
-        display: none;
-        position: absolute;
-        left: 5px;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+        padding: 10px;
         
-    }
-      
-    #dd-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        height: 40px;
+        font-size:20px;
     }
 
-    #dd-content a:hover {background-color: white;}
-      
-    .dd:hover #dd-content {display:block;}                           
-      
-    .dd:hover #dd-btn {background-color: #3e8e41;}
-      
+    .links:active{
+        color:  black;
+    }
+
 }
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-    body{
-        background-color:white;    
-        background-size: 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-    }
-
-    .navbar{
-        position: fixed;
-        top: 0;
-        left: 0;    
-        width: 100%;
-        box-shadow:  0 0 10px rgba(0,0,0,0.4);
-        background-color: #04AA6D;
-    }
-
-
-    .profile1{
-        float: left;
-        height: 50px;
-        border-radius: 100px;
-        margin: 20px;
-    }
-
-    .header{
-        float: right;
-    }
-
-    .dd{
-        border: none;
-        float: left;
-        height: 40px;
-        width: 40px; 
-        margin: 20px;       
-      }
-      
-      #dd-btn{
-        border: none;
-        background-image: url(menu.png);
-        height: 100%;
-        width:100% ;
-        background-size: 100%;
-      }
-      
-     #dd-content {
-        display: none;
-        position: absolute;
-        left: 40px;
-        top: 0px;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      #dd-content a {
-        color: black;
-        padding: 20px ;
-        text-decoration: none;
-        display: block;
-      }
-      
-      #dd-content a:hover {background-color: white;}
-      
-      .dd:hover #dd-content {display:block;}                           
-      
-      .dd:hover #dd-btn {background-color: #3e8e41;}
-}
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-
- } 
-
-

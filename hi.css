@@ -1,11 +1,11 @@
 /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 800px) {
     body{
-        background-color:white;            
+        background-color:hsl(233, 11%, 85%);            
     }
 
     .navbar{
-        background-color: #04AA6D;
+        background-color: white;
         position: fixed;
         top: 0;
         left: 0;   
@@ -58,7 +58,7 @@
         height: 40px;
         width: 40px;
         background-size: 100%;
-        border: none;
+        border: solid 1px ;
     }
       
     #dd-content {
@@ -87,18 +87,41 @@
       
     .dd:hover #dd-btn {background-color: #3e8e41;}
       
+    .icon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+
+    }
+
+    .ico{
+        width: 50px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 0px 1px 9px 0px black; 
+    }
+
+    .sidebar{
+        display:none;
+    }
+
 }
 
-
-
+    
 
 
 
 @media only screen and (min-width: 801px) {
+    body{
+        background-color:hsl(233, 11%, 85%);            
+    }
 
    
     .navbar{
-        background-color: #04AA6D;
+        background-color: white;
         position: fixed;
         top: 0;
         left: 0;   
@@ -147,13 +170,43 @@
     .links{
         text-decoration: none;
         color: white;
-        padding: 10px;
-        
+        padding: 24px;
         font-size:20px;
+    }
+
+    .links:hover{
+        background-color: black;
+        transition: 1s;
     }
 
     .links:active{
         color:  black;
+    }
+
+    .icon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+
+    }
+
+    .ico{
+        width: 50px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 0px 1px 9px 0px black; 
+    }
+
+    .sidebar{
+        position: fixed;
+        left: 0px;
+        top: 65px;
+        background-color:#04AA6D;
+        height: 100%;
+        width: 48px;     
     }
 
 }

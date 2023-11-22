@@ -1,8 +1,9 @@
- /* Extra small devices (phones, 600px and down) */
+ /* Extra small devices (phones, 800px and down) */
 @media only screen and (max-width: 800px) {
 body{
-    background-color:hsl(233, 11%, 85%);
+    background-color:white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    padding: 0px 50px;
 }
 
 .navbar{
@@ -40,6 +41,8 @@ body{
 
 .nn{
     padding: 10px;
+    
+
 }
 
 #acctName{
@@ -52,8 +55,8 @@ body{
 .name{
     margin-top: 10px;
     color:black;
-    margin-bottom: 10px;
-    
+    margin-top: 100px;
+    font-size: 20px;
 }
 
 #user{
@@ -78,7 +81,6 @@ body{
 #chuser{
     border:solid  ;
 }
-
 
 }
 

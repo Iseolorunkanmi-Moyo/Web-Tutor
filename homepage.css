@@ -1,16 +1,18 @@
 /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 800px) {
     body{
-        background-color:hsl(233, 11%, 85%);            
+        background-color:white;
+        margin: 0;
+        color: white;
     }
 
     .navbar{
-        background-color: white;
+        background-color: rgb(6, 3, 31);
         position: fixed;
         top: 0;
         left: 0;   
         width: 100%;
-        box-shadow:  0 0 10px 0 rgba(0,0,0,0.4);
+        box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.4);
     }
 
     .profile1{
@@ -27,16 +29,11 @@
     .header{
         float: left;
         width: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin: 10px;
     }
 
     .logo{
         display: flex;
-        justify-content: center;
-        align-items: center;
         text-decoration: none;
         font-weight: 600;
     }
@@ -79,6 +76,7 @@
         text-align: center;
     }
 
+  
     #dd-content a:hover {background-color: white;}
     
     #dd-content a:active{background-color: lightcyan;}
@@ -86,42 +84,90 @@
     .dd:hover #dd-content {display:block;}                           
       
     .dd:hover #dd-btn {background-color: #3e8e41;}
-      
+   
+    .empty{
+        margin-top: 125px;
+    }
+    
     .icon{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 0;
-        
-
     }
 
     .ico{
-        width: 50px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        width: 45px;
+        margin: 20px;
         border: none;
         border-radius: 40px;
-        box-shadow: 0px 1px 9px 0px black; 
+        box-shadow: 1px 4px 10px  black; 
     }
 
-    .sidebar{
-        display:none;
+    .pro1{
+        border-radius: 40px;
+        width: 150px;
+        box-shadow: 0px 6px 40px 0px ;
     }
 
-}
+    .image{
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .details{
+        display:  flex;    
+        justify-content:space-around;
+        width: 100%;
+        height: 60vh;
+        
+    }
+
+    .content1{
+
+        color: black;
+
+    }
+
+    .content2{
+
+    }
+
+    .content3{
+
+    }
+
+    #na{
+        font-family: poppins;   
+        margin-bottom: 20px;
+        background: transparent;
+    }
+
+    .footer{
+      text-align: center;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
 
     
+}
+
+
 
 
 
 @media only screen and (min-width: 801px) {
     body{
-        background-color:hsl(233, 11%, 85%);            
+        background-color: white;
+        margin: 0;          
     }
 
    
     .navbar{
-        background-color: white;
+        background-color: rgb(6, 3, 31);
         position: fixed;
         top: 0;
         left: 0;   
@@ -129,84 +175,95 @@
         box-shadow:  0 0 10px 0 rgba(0,0,0,0.4);
     }
 
-    .profile1{
-        float: left;
-        height: 50px;
-        border-radius: 100px;
-    }
-    
-    #profilename{
-        float: left;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
     .header{
         float: left;
-        width: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px;
+        margin-left: 10px;
     }
 
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-weight: 600;
+    .profile1{
+        margin: 0px;
+        height: 50px;
+        border-radius: 100px;
+        padding: 5px;
     }
-
+    
     #dd-btn{
         display: none;
     }
 
     #dd-content{
         position: absolute;
-        right: 0;
-        padding: 23px;
+        right:30px ;
+        top: 20px;        
     }
 
     .links{
         text-decoration: none;
-        color: white;
-        padding: 24px;
-        font-size:20px;
+        color:white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      
+        margin: 10px 10px;
+    }
+
+    .links a{
+
     }
 
     .links:hover{
-        background-color: black;
-        transition: 1s;
+        text-decoration: underline;
+        transition: 10ms;
     }
 
     .links:active{
-        color:  black;
+        color: black;
+        
     }
 
+    .empty{
+        margin-top: 125px;
+    }
+    
+
     .icon{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 0;
-        
-
     }
 
     .ico{
-        width: 50px;
+        width: 45px;
         margin-right: 20px;
         margin-bottom: 20px;
         border: none;
         border-radius: 40px;
-        box-shadow: 0px 1px 9px 0px black; 
+        box-shadow: 0px 4px 10px 0px black; 
     }
 
-    .sidebar{
-        position: fixed;
-        left: 0px;
-        top: 65px;
-        background-color:#04AA6D;
-        height: 100%;
-        width: 48px;     
+    .details{
+        height: 60vh;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
     }
 
+    .content1{
+
+    }
+
+    .content2{   
+
+    }
+
+    .content3{   
+
+    }
+
+    .footer{
+        text-align: center;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+      }
+    
 }

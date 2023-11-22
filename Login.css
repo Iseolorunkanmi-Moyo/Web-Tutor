@@ -65,3 +65,15 @@ body {
             float: right;
             font-size: 15px;
         }
+
+        #uu{
+            font-size: 12px ;
+            font-weight: 600;
+            color: hsl(0, 50%, 40%);
+        }
+
+        #pp{
+            font-size: 12px ;
+            font-weight: 600;
+            color: hsl(0, 50%, 40%);
+        }

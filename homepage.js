@@ -22,4 +22,5 @@ function show() {
     
 }
 
+document.getElementById("na").innerHTML = (sessionStorage.getItem("nam"));
 

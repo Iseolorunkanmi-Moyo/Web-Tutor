@@ -1,3 +1,18 @@
+// test
+
+var nameUser = userInput.value
+
+var FC = nameUser.slice(0,1);
+
+var UFC = FC.toUpperCase();
+
+var Ron = nameUser.slice(1,nameUser.length);
+
+var capName = UFC + Ron;
+
+var has = capName;
+
+
 //stored data variable
 
 var username = ["moyo", "jay" ];
@@ -23,13 +38,13 @@ var john = password.includes(ink);
  
 if  (userInput.value === ''){
 
-    alert("Fill in username");
+    document.getElementById("uu").innerHTML = "Fill in Username!"
 
 }
 
 else if (passwordInput.value === ''){
 
-    alert("Fill in your password");
+    document.getElementById("pp").innerHTML = "Fill in Password!"
 
 }
 
@@ -43,8 +58,6 @@ else if((password.includes(passwordInput.value))=== false){
     alert("Password incorrect")
 } 
 
-
-
 else if (jay = true, john = true) {
     
     username.push(
@@ -54,35 +67,37 @@ else if (jay = true, john = true) {
     password.push(
 
     document.getElementById("passwordInput.value"));
+
+    sessionStorage.removeItem("nam",has)
+
+    sessionStorage.setItem("nam",has)
   
     const al = setTimeout(
         mm, 1000)
 
         function mm (){
-            (window.open("hi.html", "_top"))
+            (window.open("homepage.html", "_top"))
         }
 }
 
 }
 
 // pivacy eye for password
-var count = 1;
 
 document.getElementById("see").addEventListener("click", text);
 
 function text () {
      
-    count++
-
-    if (count % 2 === 0){
+    if (passwordInput.type === "password"){
 
         passwordInput.type = "text";
 
-        document.getElementById("see").style.backgroundImage="url(closed-eye.png)";
+        document.getElementById("see").style.backgroundImage="url(hide.png)";
 
+        
     }
 
-    else if (count % 2 === 1){
+    else  {
 
         passwordInput.type = "password"
 
@@ -92,18 +107,7 @@ function text () {
 
 }
 
-var nameUser = userInput.value
 
-var FC = nameUser.slice(0,1);
 
-var UFC = FC.toUpperCase();
 
-var Ron = nameUser.slice(1,nameUser.length);
 
-var capName = UFC + Ron;
-
-var has = capName;
-
-window.onload = function() {
-    localStorage.setItem("name", has )
-}

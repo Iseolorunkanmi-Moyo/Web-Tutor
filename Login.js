@@ -109,5 +109,15 @@ function text () {
 
 
 
+// h = (new Date().getHours())
 
+// m = (new Date().getMinutes())
+
+// s = (new Date().getSeconds())
+
+// document.getElementById("hour").innerHTML = h;
+
+// document.getElementById("min").innerHTML = m;
+
+// document.getElementById("sec").innerHTML = s;
 

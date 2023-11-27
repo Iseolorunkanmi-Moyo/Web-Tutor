@@ -2,7 +2,7 @@
 
 var count = 1;
 
-document.getElementById("dd-btn").addEventListener("click", show);
+document.querySelector("#dd-btn").addEventListener("click", show);
 
 function show() {
     

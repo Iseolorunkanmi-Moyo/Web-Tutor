@@ -307,7 +307,7 @@
     }
 
     .navbar{
-        background-color: rgb(6, 3, 31);
+        background-color: rgb(11, 3, 31);
         position: sticky;
         top: 0;
         left: 0;   
@@ -456,11 +456,12 @@
     .coding{
         height: 150px;
         z-index: -1;
+        padding:0px 90px;
     }
 
     .coding:hover{
         z-index: -1;
-        transform: scale(1.05);
+        transform: scale(1.1);
         transition-duration: 500ms;
         transition-duration: infinite;
         
@@ -471,6 +472,26 @@
         color: black;
     }
 
+    .start{
+        background-color: rgb(11, 7, 53);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding:15px 0px ;
+    }
+
+    .start a span{
+        color: white;
+        height: 40px;
+        padding-left: 85px ;
+        padding-right:85px ;
+        padding-bottom:15px ;
+        padding-top:15px ;   
+    }
+
+    .start:hover{
+        opacity: 0.8;
+    }
 
     .content1{
         display: flex;
@@ -481,6 +502,7 @@
         padding: 30px;
         height: fit-content;
         width: 300px;
+
     }
 
     .content2{   

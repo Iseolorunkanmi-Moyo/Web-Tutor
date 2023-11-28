@@ -63,7 +63,7 @@
         display: none;
         position: absolute;
         right: 1px;
-        background-color: #f1f1f1;
+        background-color: white;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
         z-index: 1;
@@ -84,16 +84,15 @@
     }
   
     #dd-content a:hover {
-                        background-color: white;
+                        background-color: rgb(11, 7, 53);
+                        color: white;
                         }
                         
     
-    #dd-content a:active{background-color: lightcyan;}
+    #dd-content a:active{background-color: white;
+                        color: black;}
     
-    .dd:hover #dd-content {
-                            
-                            display:block; 
-                        }  
+    .dd:hover #dd-content {display:block;}  
       
     .dd:hover #dd-btn {background-color: #3e8e41;}
    
@@ -288,9 +287,7 @@
     .footer{
       text-align: center;
       height: 40px;
-    }
-
-  
+    }  
 
  }
 
@@ -306,9 +303,9 @@
     body{
         background-color: white;
         margin: 0;          
+        font-family: roboto;
     }
 
-   
     .navbar{
         background-color: rgb(6, 3, 31);
         position: sticky;
@@ -317,6 +314,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        z-index: 1;
     }
 
     .header{
@@ -427,10 +425,24 @@
     }
 
     .sear{
-        border-left: solid 1px;
         margin: 0;
         height: 30px;
         cursor: pointer;
+    }
+
+
+    #search-btn{
+        border: none;
+        background: transparent;
+        padding-left: 10px;
+        border-left: solid 1px;
+    }
+
+    #e{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .details{
@@ -443,7 +455,22 @@
 
     .coding{
         height: 150px;
+        z-index: -1;
     }
+
+    .coding:hover{
+        z-index: -1;
+        transform: scale(1.05);
+        transition-duration: 500ms;
+        transition-duration: infinite;
+        
+    }
+
+    .black{
+        text-decoration: none;
+        color: black;
+    }
+
 
     .content1{
         display: flex;
@@ -483,9 +510,7 @@
         display: flex;
         justify-content: space-evenly;
         padding: 20px;
-        
     }
-
 
     .content4{   
         display: flex;
@@ -522,7 +547,7 @@
 
     .footer{
         text-align: center;
-        height: 40px;
+        height: 20vh;
         display: flex;
         align-items: center;
         justify-content: center;

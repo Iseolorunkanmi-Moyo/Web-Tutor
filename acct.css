@@ -120,7 +120,7 @@ body{
 
     
 body{
-    background-color: hsl(233, 11%, 85%);    
+    background-color: white; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
@@ -130,7 +130,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    background-color:white ;
+    background-color: rgb(11, 7, 53);
     box-shadow:  0 0 10px 0 rgba(0,0,0,0.4);
 }
 

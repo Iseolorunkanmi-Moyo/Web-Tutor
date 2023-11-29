@@ -1,54 +1,36 @@
 /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 800px) {
+ @media only screen and (max-width: 600px) {
     body{
         background-color:white;
         margin: 0;
+        font-family: roboto;
+        background-image: url(background_in_space.gif);
     }
 
     .navbar{
-        background-color: rgb(11, 7, 53);
-        position: fixed;
-        top: 0;
-        left: 0;   
+        background-color: white;
+        position: sticky;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.4);
         z-index: 1;
     }
 
+    .header{
+        margin: 5px 10px;
+    }
+
     .profile1{
-        float: left;
         height: 50px;
         border-radius: 100px;
     }
-    
-    #profilename{
-        float: left;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .header{
-        float: left;
-        width: auto;
-        margin: 10px;
-    }
-
-    .logo{
-        display: flex;
-        text-decoration: none;
-        font-weight: 600;
-    }
 
     .dd{
-        background-color: #04AA6D;
         color: white;
         font-size: 16px;
-        border: none;
-        position: absolute;
-        right:0 ;
-        height: 40px;
-        width: 40px;
-        margin: 13px 10px;
-        
+        border: none; 
+        margin: 5px 10px;       
     }
       
     #dd-btn{
@@ -56,13 +38,13 @@
         height: 40px;
         width: 40px;
         background-size: 100%;
-        border: solid 1px ;
+        border: none ;
     }
       
     #dd-content {
         display: none;
         position: absolute;
-        right: 1px;
+        right: 11px;
         background-color: white;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
@@ -81,6 +63,10 @@
 
     .settings{
         display: none;
+        width: 10px;
+        height: 10px;
+        margin: 0px;
+        padding: 0px;
     }
   
     #dd-content a:hover {
@@ -89,15 +75,15 @@
                         }
                         
     
-    #dd-content a:active{background-color: white;
-                        color: black;}
+    #dd-content a:active{background-color: rgb(11, 7, 53);
+                        color: white;}
     
     .dd:hover #dd-content {display:block;}  
       
     .dd:hover #dd-btn {background-color: #3e8e41;}
    
     .empty{
-        margin-top: 125px;
+        margin-top: 150px;
     }
     
     .icon{
@@ -130,23 +116,26 @@
         font-size: 30px;
         font-family: poppins;
         text-align: center;
-        
+        color: white;
     }
     
     #na{
         font-family: poppins;   
         margin-bottom: 20px;    
+        color: white;
     }
 
     .ba{
         text-align: center;
         margin-bottom: 30px;
+        color: white;
     }
 
     .banner{
         margin: 0 auto;
         width: auto;
         text-align: center;
+        color: white;
     }
 
     .search{
@@ -156,10 +145,10 @@
         align-items: center;
         justify-content: center;
         gap:10px;
-        border: solid 1px;
+        border: solid 1px ;
         width: fit-content;
         margin: auto;
-        
+        background-color: white;
     }
 
     .search-bar{
@@ -169,15 +158,36 @@
         border: none;
         outline: none;
         padding-left: 20px;
+        
     }
 
-    .sear{
-        border-left: solid 1px;
+    .sear{  
         margin: 0;
         height: 30px;
         cursor: pointer;
     }
 
+    #search-btn{
+        border: none;
+        background: transparent;
+        padding-left: 10px;
+        border-left: solid 1px;
+    }
+
+    .not1{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .not{
+        color: white;
+        text-align: center;
+    }
+
+    .not:active{
+        text-decoration:dotted;
+    }
 
     .details{
         display:  flex;    
@@ -185,13 +195,22 @@
         width: 100%;
         flex-direction: column;
         margin-top: 100px;
-        gap:100px;
+        gap:50px;
+    }
+
+    .details2{
+        display:  flex;    
+        justify-content:space-around;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+        gap:50px;
     }
 
     .content1{
-        border: solid 1px;
+        border: none;
         border-radius: 3px;
-        width: fit-content;
+        width: 300px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -199,95 +218,59 @@
         align-items: center;
         color: black;
         padding: 10px;
-        box-shadow: 0px 0px 10px  rgb(199, 105, 43);
+        background-color: white;
     }
 
     .content1:hover img{
         transform: scale(1.05);
         transition-duration: 1s;
-        z-index: -1;
-        
-    }
-
-    .content2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        border: solid;
-        width: fit-content;
-        margin: 0 auto;
-        border: solid 1px;
-        border-radius: 3px;
-        box-shadow:0px 0px 10px rgb(26, 31, 128);
-    }
-
-    .content3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        border: solid;
-        width: fit-content;
-        margin: 0 auto;
-        border: solid 1px;
-        border-radius: 3px;
-        box-shadow:0px 0px 20px rgb(185, 187, 45);
+        z-index: -1;   
     }
     
-    .content4{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        border: solid;
-        width: fit-content;
-        margin: 0 auto;
-        border: solid 1px;
-        border-radius: 3px;
-        box-shadow:0px 0px 10px rgb(26, 31, 128);
-    }
-
-    .content5{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        border: solid;
-        width: fit-content;
-        margin: 0 auto;
-        border: solid 1px;
-        border-radius: 3px;
-        box-shadow:0px 0px 20px rgb(185, 187, 45);
-    }
-    
-    .content6{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        border: solid;
-        width: fit-content;
-        margin: 0 auto;
-        border: solid 1px;
-        border-radius: 3px;
-        box-shadow:0px 0px 20px rgb(185, 187, 45);
-    }
-    
-
     .coding{
         height: 200px;
+       width: 200px;
+    }
+
+    .start{
+        background-color: rgb(11, 7, 53);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding:15px 0px ;
+    }
+
+    .start a span{
+        color: white;
+        height: 40px;
+        padding-left: 85px ;
+        padding-right:85px ;
+        padding-bottom:15px ;
+        padding-top:15px ;   
+    }
+
+    .start:hover{
+        opacity: 0.8;
+    }
+
+    .black{
+        text-decoration: none;
+        color: black;
+        font-family: roboto;
+    }
+
+    .nn{
+        color: white;
+        display: flex;
+        justify-content: center;
     }
 
     .footer{
       text-align: center;
       height: 40px;
-    }  
+      background-color: white;
+      
+    }
 
  }
 
@@ -299,15 +282,344 @@
 
 
 
-@media only screen and (min-width: 801px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 1280px) {
     body{
+        background-color:white;
+        margin: 0;
+        font-family: roboto;
+        background-image: url(background_in_space.gif);
+    }
+
+    .navbar{
         background-color: white;
+        position: sticky;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .header{
+        margin: 5px 10px;
+    }
+
+    .profile1{
+        height: 50px;
+        border-radius: 100px;
+    }
+
+    .dd{
+        color: white;
+        font-size: 16px;
+        border: none; 
+        margin: 5px 10px;       
+    }
+      
+    #dd-btn{
+        background-image: url(menu.png);
+        height: 40px;
+        width: 40px;
+        background-size: 100%;
+        border: none ;
+    }
+      
+    #dd-content {
+        display: none;
+        position: absolute;
+        right: 11px;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+        z-index: 1;
+        
+    }
+      
+    #dd-content a {
+        color: rgb(24, 20, 20);
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .settings{
+        display: none;
+        width: 10px;
+        height: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+  
+    #dd-content a:hover {
+                        background-color: rgb(11, 7, 53);
+                        color: white;
+                        }
+                        
+    
+    #dd-content a:active{background-color: rgb(11, 7, 53);
+                        color: white;}
+    
+    .dd:hover #dd-content {display:block;}  
+      
+    .dd:hover #dd-btn {background-color: #3e8e41;}
+   
+    .empty{
+        margin-top: 150px;
+    }
+    
+    .icon{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    .ico{
+        width: 45px;
+        margin: 20px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 1px 4px 10px  black; 
+    }
+
+    .pro1{
+        border-radius: 40px;
+        width: 150px;
+        box-shadow: 0px 6px 40px 0px ;
+    }
+
+    .image{
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .na{
+        font-size: 30px;
+        font-family: poppins;
+        text-align: center;
+        color: white;
+    }
+    
+    #na{
+        font-family: poppins;   
+        margin-bottom: 20px;    
+        color: white;
+    }
+
+    .ba{
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    .banner{
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+        color: white;
+    }
+
+    .search{
+        padding: 0px 10px 0px 0px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        border: none ;
+        width: fit-content;
+        margin: auto;
+        background-color: white;
+    }
+
+    .search-bar{
+        height: 30px;   
+        width: 200px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+    }
+
+    .sear{  
+        margin: 0;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #search-btn{
+        border: none;
+        background: transparent;
+        padding-left: 10px;
+        border-left: solid 1px;
+    }
+
+    .not1{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .not{
+        color: white;
+        text-align: center;
+    }
+
+    .not:active{
+        text-decoration:dotted;
+    }
+
+    .details{
+        display:  flex;    
+        justify-content:space-around;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 100px;
+        gap:50px;
+        
+    }
+
+    .details2{
+        display:  flex;    
+        justify-content:space-around;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+        gap:50px;
+    }
+
+    .content1{
+        border: none;
+        border-radius: 3px;
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        
+        padding: 10px;
+        background-color: white;
+    }
+
+    .content1:hover img{
+        transform: scale(1.05);
+        transition-duration: 1s;
+        z-index: -1;   
+    }
+    
+    .coding{
+        height: 200px;
+       width: 200px;
+    }
+
+    .start{
+        background-color: rgb(11, 7, 53);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding:15px 0px ;
+    }
+
+    .start a span{
+        color: white;
+        height: 40px;
+        padding-left: 85px ;
+        padding-right:85px ;
+        padding-bottom:15px ;
+        padding-top:15px ;   
+    }
+
+    .start:hover{
+        opacity: 0.8;
+    }
+
+    .black{
+        text-decoration: none;
+        color: black;
+        font-family: roboto;
+    }
+
+    .nn{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer{
+      text-align: center;
+      height: 40px;
+      background-color: white;
+      
+    }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* laptop and desktop */
+@media only screen and (min-width: 1280px) {
+    body{
+        background-image: url(background_in_space.gif);
         margin: 0;          
         font-family: roboto;
     }
 
     .navbar{
-        background-color: rgb(11, 3, 31);
+        background-color:white;
         position: sticky;
         top: 0;
         left: 0;   
@@ -341,13 +653,10 @@
 
     .links{
         text-decoration: none;
-        color:white;
+        color:black;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      
-        padding: 10px 10px;       
-    }
-
-    .links a{
-
+        padding: 10px 10px; 
+        font-weight: 600;      
     }
 
     .links:hover{
@@ -379,14 +688,16 @@
     
     .na{
         text-align: center;
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 20px;
+        color: white;
     }
 
     .ba{
         text-align: center;
         animation: move 10s ;
         margin-bottom: 40px;
+        color: white;
     }
 
     .banner{
@@ -413,6 +724,8 @@
         border: solid 1px;
         width: fit-content;
         margin: auto;
+        background-color: white;
+        font-family: roboto;
     }
 
     .search-bar{
@@ -422,6 +735,7 @@
         border: none;
         outline: none;
         padding-left: 20px;
+        font-family: roboto;
     }
 
     .sear{
@@ -430,12 +744,22 @@
         cursor: pointer;
     }
 
-
     #search-btn{
         border: none;
         background: transparent;
         padding-left: 10px;
         border-left: solid 1px;
+    }
+
+    .not{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        color: white;
+    }
+
+    .not1{
+        color: white;
     }
 
     #e{
@@ -470,6 +794,7 @@
     .black{
         text-decoration: none;
         color: black;
+        font-family: roboto;
     }
 
     .start{
@@ -502,31 +827,10 @@
         padding: 30px;
         height: fit-content;
         width: 300px;
-
+        background-color: white;
     }
 
-    .content2{   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        box-shadow: 0px 0px 4px 0px black;
-        padding: 30px;
-        height: fit-content;
-        width: 300px;
-    }
-
-    .content3{   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        box-shadow: 0px 0px 4px 0px black;
-        padding: 30px;
-        height: fit-content;
-        width: 300px;
-    }
-
+    
     .details2{
         height: 50vh;
         display: flex;
@@ -534,42 +838,15 @@
         padding: 20px;
     }
 
-    .content4{   
+    .nn{
+        color: white;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        box-shadow: 0px 0px 4px 0px black;
-        padding: 30px;
-        height: fit-content;
-        width: 300px;
-    }
-
-    .content5{   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        box-shadow: 0px 0px 4px 0px black;
-        padding: 30px;
-        height: fit-content;
-        width: 300px;
-    }
-
-    .content6{   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        box-shadow: 0px 0px 4px 0px black;
-        padding: 30px;
-        height: fit-content;
-        width: 300px;
+        justify-content: center;
     }
 
     .footer{
         text-align: center;
-        height: 20vh;
+        height: 5vh;
         display: flex;
         align-items: center;
         justify-content: center;

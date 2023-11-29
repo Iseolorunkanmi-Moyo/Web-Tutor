@@ -109,15 +109,43 @@ function text () {
 
 
 
-// h = (new Date().getHours())
+function updateClock() {
 
-// m = (new Date().getMinutes())
-
-// s = (new Date().getSeconds())
-
-// document.getElementById("hour").innerHTML = h;
-
-// document.getElementById("min").innerHTML = m;
-
-// document.getElementById("sec").innerHTML = s;
-
+    let currentTime = new Date();
+   
+    let hours = currentTime.getHours();
+   
+    let minutes = currentTime.getMinutes();
+   
+    let seconds = currentTime.getSeconds();
+   
+   
+    if (hours < 10) {
+   
+       hours = "0" + hours;
+   
+    }
+   
+    if (minutes < 10) {
+   
+       minutes = "0" + minutes;
+   
+    }
+   
+    if (seconds < 10) {
+   
+       seconds = "0" + seconds;
+   
+    }
+   
+   
+    let timeString = hours + ":" + minutes + ":" + seconds;
+   
+    document.getElementById("date").innerText = timeString;
+   
+   }
+   
+   
+   updateClock();
+   
+   setInterval(updateClock, 1000);

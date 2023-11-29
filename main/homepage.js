@@ -34,6 +34,8 @@ var js = ["javascript", "javascrip", "javascri", "javascr", "javascr", "javasc"]
 
 var python = ["python", "pytho", "pyth", "pyt", "py", "p"]
 
+var c = ["c", "c+", "c++"]
+
 var fol = ["html", "css", "javascript", "python", "c", "c++"]
 
 
@@ -42,14 +44,13 @@ document.getElementById("search-btn").addEventListener("click", search);
 
 function search (){
 
+    var html_div = document.getElementsByClassName(".content1")
+
     var ff = document.getElementById("search-bar").value    
-
-    if( ff = " "){
-        document.getElementById("e").innerHTML= "Fill in a course";
-    }
-
-    else if ((html.includes(ff))){
-        alert("seen")
+ 
+     if ((html.includes(ff))){
+        window.scrollTo(0,300)
+        
     }
 
     else if ((css.includes(ff))){
@@ -62,6 +63,10 @@ function search (){
 
     else if ((python.includes(ff))){
         alert("python")
+    }
+
+    else if ((c.includes(ff))){
+        alert("c")
     }
 
     else if (ff !== "html", ff !== "css", ff !== "javascript")

@@ -4,7 +4,7 @@
         background-color:white;
         margin: 0;
         font-family: roboto;
-        background-image: url(background_in_space.gif);
+        background-image: url(/Images/background_in_space.gif);
     }
 
     .navbar{
@@ -27,20 +27,24 @@
     }
 
     .dd{
-        color: white;
-        font-size: 16px;
-        border: none; 
-        margin: 5px 10px;       
+        height: 40px;      
+        width: 40px;
     }
       
     #dd-btn{
-        background-image: url(menu.png);
+        background-image: url(/Images/menu.png);
         height: 40px;
         width: 40px;
         background-size: 100%;
-        border: none ;
     }
-      
+    
+    .dd-btn{
+        background-image: url(/Images/menu.png);
+        height: 40px;
+        width: 40px;
+        background-size: 100%;
+    }
+
     #dd-content {
         display: none;
         position: absolute;
@@ -48,8 +52,6 @@
         background-color: white;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
-        z-index: 1;
-        
     }
       
     #dd-content a {
@@ -58,7 +60,6 @@
         display: block;
         padding: 20px;
         text-align: center;
-        z-index: 1;
     }
 
     .settings{
@@ -265,11 +266,18 @@
         justify-content: center;
     }
 
+    .black1{
+        text-decoration: none;
+        color: black;
+    }
+
     .footer{
       text-align: center;
       height: 40px;
       background-color: white;
-      
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
     }
 
  }
@@ -303,12 +311,12 @@
 
 
 
- @media only screen and (max-width: 1280px) {
+ @media only screen and (max-width: 1279px) {
     body{
         background-color:white;
         margin: 0;
         font-family: roboto;
-        background-image: url(background_in_space.gif);
+        background-image: url(/Images/background_in_space.gif);
     }
 
     .navbar{
@@ -570,11 +578,18 @@
         justify-content: center;
     }
 
+    .black1{
+        text-decoration: none;
+        color: black;
+    }
+
     .footer{
       text-align: center;
-      height: 40px;
+      height: fit-content;
       background-color: white;
-      
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
  }
@@ -613,7 +628,7 @@
 /* laptop and desktop */
 @media only screen and (min-width: 1280px) {
     body{
-        background-image: url(background_in_space.gif);
+        background-image: url(/Images/background_in_space.gif);
         margin: 0;          
         font-family: roboto;
     }
@@ -681,6 +696,57 @@
         margin-top: 1px;
     }
 
+    
+    .astro1{
+        z-index: 1;
+        float: left;
+        height: 100px;
+        animation: astron 10s infinite;
+    }
+
+    @keyframes astron {
+        0%{
+            transform: translateX(0px);
+        }
+
+        50%{
+            transform: translateX(100%) 
+        }
+        
+        75%{
+            
+        }
+
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+
+    .astro2{
+        z-index: 1;
+        float: right;
+        height: 100px;
+        animation: astron1 10s infinite;
+    }
+
+    @keyframes astron1 {
+        0%{
+            transform: translateX(0px);
+        }
+
+        50%{
+            transform: translateX(-100%) 
+        }
+       
+
+        100%{
+            transform: translateX(0px);
+        }
+
+    }
+
+
     .empty{
         margin-top: 155px;
 
@@ -695,7 +761,7 @@
 
     .ba{
         text-align: center;
-        animation: move 10s ;
+        animation: move 10s infinite ;
         margin-bottom: 40px;
         color: white;
     }
@@ -706,11 +772,19 @@
 
     @keyframes move {
         0%{
-            transform: translateX(-100px);
+            transform: translateY(0px);
+        }
+
+        33%{
+            transform: translateY(20px);
+        }
+
+        66%{
+            transform: translateY(-20px);
         }
 
         100%{
-            transform: translateX(0);
+            transform: translateY(0px);
         }
     }
 
@@ -828,6 +902,7 @@
         height: fit-content;
         width: 300px;
         background-color: white;
+        border-radius: 5px;
     }
 
     
@@ -836,6 +911,7 @@
         display: flex;
         justify-content: space-evenly;
         padding: 20px;
+        margin-top: 30px;
     }
 
     .nn{
@@ -844,13 +920,20 @@
         justify-content: center;
     }
 
+    .black1{
+        text-decoration: none;
+        color: black;
+    }
+
     .footer{
         text-align: center;
-        height: 5vh;
+        height: fit-content;
+        gap: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: white;
-      }
+        flex-direction: column;
+    }
     
 }

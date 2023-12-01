@@ -10,27 +10,67 @@
 <body>
     <div class="navbar">
 
-        <div class="profile-pic">
+        <span class="re-btn">
             <a href="homepage.html">
-                <img class="return" src="left arrow.png" alt="">
+                <img class="return" src="/Images/left arrow.png" alt="">
             </a>
-        </div>
-       
-        <div id="acctName">
+        </span>
+
+        <span id="acctName">
             Account Info
-        </div>
+        </span>
 
     </div>
 
-    <div class="name">
+    <div class="empty"></div>
 
-        Username: <span id="name"></span>
+    <div class="content">
 
-    </div>       
+        <div class="sub">
+            <span>Username:</span>
+            <span id="name">Oluwatomisin</span>
+        </div> 
 
-    <button id="recount"> Click</button>
+        <div class="sub">
+            <span>Firstname:</span>
+            <span>Moyo</span>
+        </div>
 
-    <span id="result">1</span>
+        <div class="sub">
+            <span>Lastname</span>
+            <span>d</span>
+        </div>
+
+        <div class="sub">
+            <span>Email-address</span>
+            <span>ww@gmail.com</span>
+        </div>
+
+        <div class="sub">
+            <span>Phone Address</span>
+            <span>(+234)-000-000-000</span>
+        </div>
+
+        <div class="sub">
+            <span>Password</span>
+            <span id="password">....</span>
+        </div>
+
+        
+
+    </div>
+       
+
+    <div class="edit">
+        <button class="edit-btn">Edit </button>
+        <button class="save-btn">Save Changes</button>
+    </div>
+
+    <div class="log-btn">
+
+        <button class="logout" id="log-out">Log Out</button>
+
+    </div>
 
 <script src="acct.js"></script>    
 </body>

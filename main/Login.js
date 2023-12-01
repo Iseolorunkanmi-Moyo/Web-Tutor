@@ -1,17 +1,29 @@
 // test
-
+//user
 var nameUser = userInput.value
 
-var FC = nameUser.slice(0,1);
+var FCU = nameUser.slice(0,1);
 
-var UFC = FC.toUpperCase();
+var UFU = FCU.toUpperCase();
 
-var Ron = nameUser.slice(1,nameUser.length);
+var Ronu = nameUser.slice(1,nameUser.length);
 
-var capName = UFC + Ron;
+var capUserName = UFU + Ronu;
 
-var has = capName;
+const us = capUserName;
 
+//password
+var namePass = passwordInput.value
+
+var FCP = namePass.slice(0,1);
+
+var UFP = FCP.toUpperCase();
+
+var Ronp = namePass.slice(1,namePass.length);
+
+var capPassName = UFP + Ronp;
+
+let pass = capPassName;
 
 //stored data variable
 
@@ -24,6 +36,8 @@ var userCheck = (username.includes( userInput.value))
 var used = (userInput.value).toLowerCase;
 
 var ink = (passwordInput.value).toLowerCase;
+
+
 
 //User name input
 
@@ -55,11 +69,23 @@ else if (( username.includes(userInput.value))=== false){
 }
 
 else if((password.includes(passwordInput.value))=== false){
+    
     alert("Password incorrect")
+    
 } 
 
 else if (jay = true, john = true) {
+
+   
     
+    localStorage.removeItem("nam",userInput.value);
+
+    localStorage.removeItem("pass", passwordInput.value);
+
+    localStorage.setItem("nam",userInput.value);
+
+    localStorage.setItem("pass", passwordInput.value);
+
     username.push(
 
     document.getElementById("userInput.value"));
@@ -68,9 +94,7 @@ else if (jay = true, john = true) {
 
     document.getElementById("passwordInput.value"));
 
-    sessionStorage.removeItem("nam",has)
-
-    sessionStorage.setItem("nam",has)
+ 
   
     const al = setTimeout(
         mm, 1000)
@@ -92,7 +116,7 @@ function text () {
 
         passwordInput.type = "text";
 
-        document.getElementById("see").style.backgroundImage="url(hide.png)";
+        document.getElementById("see").style.backgroundImage="url(/Images/hide.png)";
 
         
     }
@@ -101,7 +125,7 @@ function text () {
 
         passwordInput.type = "password"
 
-        document.getElementById("see").style.backgroundImage="url(eye.png)";
+        document.getElementById("see").style.backgroundImage="url(/Images/eye.png)";
 
     }
 
@@ -109,43 +133,43 @@ function text () {
 
 
 
-function updateClock() {
+// function updateClock() {
 
-    let currentTime = new Date();
+//     let currentTime = new Date();
    
-    let hours = currentTime.getHours();
+//     let hours = currentTime.getHours();
    
-    let minutes = currentTime.getMinutes();
+//     let minutes = currentTime.getMinutes();
    
-    let seconds = currentTime.getSeconds();
-   
-   
-    if (hours < 10) {
-   
-       hours = "0" + hours;
-   
-    }
-   
-    if (minutes < 10) {
-   
-       minutes = "0" + minutes;
-   
-    }
-   
-    if (seconds < 10) {
-   
-       seconds = "0" + seconds;
-   
-    }
+//     let seconds = currentTime.getSeconds();
    
    
-    let timeString = hours + ":" + minutes + ":" + seconds;
+//     if (hours < 10) {
    
-    document.getElementById("date").innerText = timeString;
+//        hours = "0" + hours;
    
-   }
+//     }
+   
+//     if (minutes < 10) {
+   
+//        minutes = "0" + minutes;
+   
+//     }
+   
+//     if (seconds < 10) {
+   
+//        seconds = "0" + seconds;
+   
+//     }
    
    
-   updateClock();
+//     let timeString = hours + ":" + minutes + ":" + seconds;
    
-   setInterval(updateClock, 1000);
+//     document.getElementById("date").innerText = timeString;
+   
+//    }
+   
+   
+//    updateClock();
+   
+//    setInterval(updateClock, 1000);

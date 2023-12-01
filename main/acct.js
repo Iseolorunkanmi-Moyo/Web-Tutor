@@ -1,4 +1,11 @@
-document.getElementById("name").innerHTML = (sessionStorage.getItem("nam"));
+var user = localStorage.getItem("nam");
 
+var pass = localStorage.getItem("pass");
 
-// window.onload = alert(sessionStorage.getItem("nam"))
+// alert(user);
+
+// alert(pass);
+
+document.getElementById("name").innerHTML = user;
+
+document.getElementById("password").innerHTML = pass;

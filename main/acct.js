@@ -9,3 +9,9 @@ var pass = localStorage.getItem("pass");
 document.getElementById("name").innerHTML = user;
 
 document.getElementById("password").innerHTML = pass;
+
+document.getElementById("return").addEventListener("click", retur);
+
+function retur(){
+    history.back();
+}

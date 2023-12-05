@@ -80,9 +80,7 @@
                         color: white;}
     
     .dd:hover #dd-content {display:block;}  
-      
-    .dd:hover #dd-btn {background-color: #3e8e41;}
-   
+         
     .empty{
         margin-top: 150px;
     }

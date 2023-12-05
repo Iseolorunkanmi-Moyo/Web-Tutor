@@ -72,3 +72,4 @@ function search (){
     else if (ff !== "html", ff !== "css", ff !== "javascript")
         alert("Course not found")
 }
+

@@ -236,7 +236,7 @@ body {
 
     .rocket{
         height: 100px;
-        animation: rock 10s infinite ease-in-out;
+        animation: rock 10s infinite ;
     }   
 
     @keyframes rock {
